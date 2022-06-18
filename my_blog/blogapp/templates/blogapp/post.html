@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} {{ post.name }} {% endblock %}
+{% block header %} {{ post.name }} {% endblock %}
+{% block content %}
+
+    <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+
+        <div class="post-preview">
+                <h2 class="post-title">
+                    {{ post.name }}
+                </h2>
+                <h4 class="post-subtitle">
+                    {{ post.category }}
+                </h4>
+                <h6 class="post-subtitle">
+                    {{ post.text }}
+                </h6>
+            <p class="post-meta">
+                {{ post.create }}</p>
+        </div>
+        <hr>
+
+    </div>
+        {% endblock %}
